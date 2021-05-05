@@ -1,0 +1,82 @@
+html {
+    font-size: 10px;
+    /* background: url('./background.jpg') bottom center; */
+    background-size: cover;
+  }
+  
+  .animation {
+    animation-duration: 0.1s;
+    animation-name: rollDrum;
+  }
+  
+  @keyframes rollDrum {
+    from {
+      transform-origin: 50% 50%;
+      transform: scale(0.99);
+    }
+  
+    to {
+      transform-origin: 50% 50%;
+      transform: scale(1.05);
+    }
+  }
+
+  .drum svg {
+    display: block;
+    margin: auto;
+    height: 400px;
+  }
+
+kbd{
+    display: block;
+    font-size: 4em;
+    /* font-family: 'Roboto', sanss-serif;
+    font-size: 4rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    background-color: #eee;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 20px;
+ 
+    color:grey;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer; */
+    
+}
+.keys{
+    display: flex;
+    /* height: 100vh; */
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.key{
+    
+    font-weight: 500;
+    text-transform: uppercase;
+    background-color: #eee;
+    border-radius: 3px;
+    padding: 10px 30px;
+    color:rgb(87, 85, 85);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+
+}
+
+
+.key:hover {
+    background-color: #eb495d;
+    box-shadow: 0px 15px 20px #497beb47;
+    color: #fff;
+    transform: translateY(-7px);
+}
+
+.playing{
+    transform: scale(1.1);
+    border-color: black;
+    box-shadow: 0 0 10px #eb495d;
+}
